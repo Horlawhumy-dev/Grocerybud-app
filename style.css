@@ -1,0 +1,320 @@
+body{
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+@media screen and (max-width:768px){
+    .container{
+        background-color: white;
+        margin: 3em auto;
+        width: 400px;
+        border-radius: 10px;
+        padding: 1em;
+        text-transform: capitalize;
+        display: flex;
+        align-content: space-between;
+        flex-flow: column wrap;
+    }
+    
+    .danger{
+        /* background-color:red; */
+        color: red;
+        padding: .5em 1em;
+        padding-left: 2em;
+        border-radius: 2px;
+        margin-right: 2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2px;
+    }
+    
+    .success{
+        /* background-color:blue; */
+        color: lawngreen;
+        padding: .5em 1em;
+        padding-left: 2em;
+        border-radius: 2px;
+        margin-right: 2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2px;
+    }
+
+    .cleared{
+        color: blue;
+        padding: .5em 1em;
+        border: none;
+        margin-right: 2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2px;
+        
+    }
+    .grocery-container{
+        margin: 0;
+    
+    }
+    
+    .grocery{
+        margin: 3em auto;
+        font: bold 1em verdana ;
+    }
+    
+    .grocery h2{
+        margin: 1em 0 1em 2em;
+        color: orangered;
+        font-size: 2em;
+        
+    }
+    
+    #form{
+        padding:0;
+        margin-top: 2em;
+    }
+    
+    .grocery-input{
+        padding: 1em;
+        width: 250px;
+        border: none;
+        background-color: lightgray;
+        border-radius: 2px;
+        color: rgb(0, 0, 0);
+        font: bold 1em verdana ;
+        outline: none;
+    }
+
+    
+    .submit{
+        border:2px solid white;
+        background-color: orangered;
+        border-radius: 2px;
+        padding: 1em;
+        margin-left: -.5em;
+        width: 100px;
+        color: rgb(255, 255, 255);
+        font: bold 1em verdana ;
+        outline: none;
+        cursor: pointer;
+    
+    }
+
+    .submit:hover{
+        background-color: blue;
+    }
+    
+    .grocery-list{
+        /* background-color: black; */
+        padding: 1em;
+    }
+    
+    .hide-list{
+        visibility: hidden;
+    }
+    .show-list{
+        visibility: visible;
+    }
+    
+    .list-items{
+        /* background-color: black; */
+        color: white;
+        display: flex;
+    }
+    
+    .items{
+        width: 58%;
+        padding: 1.5em;
+        color: orangered;
+        font: bold 1em verdana ;
+        text-transform: capitalize;
+    }
+    .grocery-btn{
+        margin: 1em 0;
+        display: flex;
+    }
+
+    .btn{
+        padding: 1em;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 2px;
+        color: orangered;
+        margin-right: .5em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+    }
+    
+    .clearItem{
+        background-color: inherit;
+        border: 2px solid orangered;
+        border-radius: 5px;
+        padding: 1em;
+        margin-left: 3em;
+        color: orangered;
+        font: bold 1.5em verdana ;
+        text-transform: capitalize;
+        /* outline:none;
+         */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********* GENERAL STYLES *********** */
+@media screen and (min-width:769px){
+    .container{
+        background-color: white;
+        margin: 3em auto;
+        width: 700px;
+        border-radius: 10px;
+        padding: 1em;
+        text-transform: capitalize;
+        display: flex;
+        align-content: space-between;
+        flex-flow: column wrap;
+    }
+    
+    .danger{
+        /* background-color:red; */
+        color: red;
+        padding: .5em 1em;
+        padding-left: 2em;
+        border-radius: 2px;
+        margin-right: 2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2px;
+    }
+    
+    .success{
+        /* background-color:blue; */
+        color: lawngreen;
+        padding: .5em 1em;
+        padding-left: 2em;
+        border-radius: 2px;
+        margin-right: 2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2px;
+    }
+
+    .cleared{
+        color: blue;
+        padding: .5em 1em;
+        border: none;
+        margin-right: 2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2px;
+        
+    }
+    .grocery-container{
+        margin: 0;
+    
+    }
+    
+    .grocery{
+        margin: 3em auto;
+        font: bold 1em verdana ;
+    }
+    
+    .grocery h2{
+        margin: 1em 0 1em 2em;
+        color: orangered;
+        font-size: 3em;
+        
+    }
+    
+    #form{
+        padding:0;
+        margin-top: 2em;
+    }
+    
+    .grocery-input{
+        padding: 1.5em; 
+        width: 400px;
+        border: none;
+        background-color: lightgray;
+        border-radius: 2px;
+        color: orangered;
+        font: bold 1em verdana ;
+        outline: none;
+    }
+    
+    .submit{
+        border: none;
+        background-color: orangered;
+        border-radius: 2px;
+        padding: 1.5em;
+        margin-left: -.5em;
+        width: 200px;
+        color: rgb(255, 255, 255);
+        font: bold 1em verdana ;
+        outline: none;
+        cursor: pointer;
+    
+    }
+    
+    .grocery-list{
+        /* background-color: black; */
+        padding: 1em;
+        margin-left: 3em;
+    }
+    
+    .hide-list{
+        visibility: hidden;
+    }
+    .show-list{
+        visibility: visible;
+    }
+    
+    .list-items{
+        /* background-color: black; */
+        color: white;
+        display: flex;
+    }
+    
+    .items{
+        width: 58%;
+        padding: 1.5em;
+        color: orangered;
+        font: bold 1em verdana ;
+        text-transform: capitalize;
+    }
+    .grocery-btn{
+        margin: 1em 0;
+        display: flex;
+    }
+    .btn{
+        background-color: red;
+        padding: 2em;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+        margin-right: 2em;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        cursor: pointer;
+        outline: none;
+
+    }
+    
+    .clearItem{
+        background-color: inherit;
+        border: none;
+        padding: 1em;
+        margin-left: 3em;
+        color: orangered;
+        font: bold 1.5em verdana ;
+        text-transform: capitalize;
+        /* outline:none;
+         */
+    }
+}

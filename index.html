@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Bud App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- CONTAINER -->
+    <section class="container">
+        <div class="grocery-container">
+            <p class="danger success" id="alert"></p>
+            <article class="grocery">
+                <h2>grocery bud app</h2>
+                <form id="form">
+                    <input type="text" id="grocery-item" class="grocery-input" placeholder="e.g. eggs">
+                    <button type="submit" id="submit-btn" class="submit">submit</button>
+                </form>
+            </article>
+        </div>
+
+        <div class="grocery-list hide-list">
+            <button type="button" id="clear-btn" class="clearItem">clear items</button>
+        </div>
+    </section>
+        
+
+    <!-- JAVASCRIPT -->
+    <script src="app.js"></script>
+</body>
+</html>
